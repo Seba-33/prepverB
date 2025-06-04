@@ -6,3 +6,7 @@
 @for(carrel of vettCart; track carrel) {
   <app-details [carts]="carrel"></app-details>
 }
+
+@for(elem of vettCart; track elem){
+  <app-carrello [elenco]="elem"></app-carrello>
+}
