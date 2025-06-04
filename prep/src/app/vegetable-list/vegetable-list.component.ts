@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Vegetali } from '../Models/vegetables.model';
 
+
 @Component({
   selector: 'app-vegetable-list',
   standalone: true,
@@ -10,6 +11,7 @@ import { Vegetali } from '../Models/vegetables.model';
 })
 export class VegetableListComponent {
   @Input() verdura! : Vegetali
+  
 
   aggiungi(nProd: HTMLInputElement){
     console.log(" Nome: " + this.verdura.nome + " Quantita: " + nProd.value)
