@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Vegetali } from '../Models/vegetables.model';
+import { CartProduct } from '../Models/cartproduct.model';
 
 
 @Component({
@@ -15,5 +16,6 @@ export class VegetableListComponent {
 
   aggiungi(nProd: HTMLInputElement){
     console.log(" Nome: " + this.verdura.nome + " Quantita: " + nProd.value)
+    
   }
 }

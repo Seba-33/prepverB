@@ -5,11 +5,12 @@ import { VegetableListComponent } from './vegetable-list/vegetable-list.componen
 import { Vegetali } from './Models/vegetables.model';
 import { HttpClient } from '@angular/common/http';
 import { CartProduct } from './Models/cartproduct.model';
+import { DetailsComponent } from './details/details.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,VegetableListComponent],
+  imports: [RouterOutlet,VegetableListComponent,DetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
