@@ -12,10 +12,12 @@ import { CartProduct } from '../Models/cartproduct.model';
 })
 export class VegetableListComponent {
   @Input() verdura! : Vegetali
+  @Input() cartPr! : CartProduct[]
   
 
   aggiungi(nProd: HTMLInputElement){
-    console.log(" Nome: " + this.verdura.nome + " Quantita: " + nProd.value)
+    this.cartPr.push(new CartProduct(this.verdura.nome,this.verdura.descrizione,this.verdura.prezzo,nProd.value))
+    console.log(this.cartPr)
     
   }
 }
